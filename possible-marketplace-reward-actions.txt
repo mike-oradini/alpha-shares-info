@@ -1,0 +1,14 @@
+Suggestion/Idea - Could we offer points or equivalent that are rewarded when you take some type of action within the marketplace?
+
+For example:
+Listing a nft on eth - 5 Points (Would have a cap or limit per day/week/month) 
+Listing a nft on poly - 2 Points (Would have a cap or limit per day/week/month) 
+Purchased a nft - 50 points
+Sold a NFT - 25 points
+Placed a collection offer - 1 point
+Collection offer accepted - 10 points per party
+Claimed TAP rewards - 2 points
+Weekly points for holding Alpha Shared related projects - X points
+Bunch of things here and the above are just examples. This can be used to increase engagement and get folks excited about using Alpha shares Marketplace.
+
+In the future these points could be redeemed for an airdrop or claim of Alpha token, USDC, or native chain token. 
