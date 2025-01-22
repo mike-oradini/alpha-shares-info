@@ -1,0 +1,59 @@
+<servicesMenu>
+    <designCreativeServices>
+        <service>
+            <title>Logo Design</title>
+            <description>Unique logos with multiple concepts and revisions</description>
+            <price>$500</price>
+        </service>
+        <service>
+            <title>Website Development</title>
+            <description>Full responsive website design with up to 5 custom features</description>
+            <price>$3,000</price>
+        </service>
+        <service>
+            <title>Marketing Graphics</title>
+            <description>Custom-designed graphics for social media and advertisements</description>
+            <price>$50 per graphic</price>
+        </service>
+        <service>
+            <title>NFT Art Design</title>
+            <description>Custom NFT artwork creation with ownership and rights transfer</description>
+            <price>$1,000 per NFT</price>
+        </service>
+        <service>
+            <title>Branding Package</title>
+            <description>Complete branding package including logo, colors, and typography</description>
+            <price>$2,500</price>
+        </service>
+    </designCreativeServices>
+    <creativeSubscriptions>
+        <category title="Written Content">
+            <plan title="Basic" description="2 written pieces per month" price="$300/month" />
+            <plan title="Pro" description="4 written pieces per month" price="$600/month" />
+            <plan title="Premium" description="Unlimited written content with SEO optimization" price="$1,200/month" />
+        </category>
+        <category title="Social Media Graphics and Promo Content">
+            <plan title="Basic" description="5 social media graphics or promo visuals" price="$300/month" />
+            <plan title="Pro" description="10 custom graphics or GIFs monthly" price="$600/month" />
+            <plan title="Premium" description="Unlimited graphics and GIFs" price="$1,200/month" />
+        </category>
+        <category title="Video Media Content">
+            <plan title="Basic" description="2 short videos or clips monthly" price="$500/month" />
+            <plan title="Pro" description="4 videos or clips monthly" price="$1,000/month" />
+            <plan title="Premium" description="Unlimited video content creation" price="$2,000/month" />
+        </category>
+    </creativeSubscriptions>
+    <businessConsultation>
+        <plan title="Basic Consultation" description="2 consultation sessions (30 minutes each) monthly" price="$250/month" />
+        <plan title="Pro Consultation" description="4 consultation sessions (45 minutes each) monthly" price="$500/month" />
+        <plan title="Premium Consultation" description="Unlimited consultation sessions (up to 60 minutes each) monthly" price="$1,000/month" />
+    </businessConsultation>
+    <sponsorshipAdvertising>
+        <option title="Social Media Sponsorship" description="Featured posts on X, Instagram, and Facebook feeds" price="$250/post" />
+        <option title="YouTube Video Features" description="Dedicated segment in a video or shout-out" price="$500/video" />
+        <option title="Email Marketing Advertising" description="Featured advertisement in a newsletter" price="$300/email" />
+        <option title="Live Stream Sponsorship" description="Mention during live streams with branded overlays" price="$400/stream" />
+        <option title="Daily Social Spotlight" description="Highlighted spot on daily social media posts" price="$200/day" />
+        <option title="Multichannel Ad Bundle" description="Combination of 3 social posts, 1 YouTube video feature, and 1 email ad" price="$2,500/package" />
+    </sponsorshipAdvertising>
+</servicesMenu>
