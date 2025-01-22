@@ -4,71 +4,179 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alpha Shares Services Menu</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            padding: 0.5rem 0;
+            background-color: #3e8e41;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        h1, h2 {
+            color: #4CAF50;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            background: white;
+            margin: 0.5rem 0;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+
+        li img {
+            width: 60px;
+            height: 60px;
+            margin-right: 1rem;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #333;
+            margin-left: auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #4CAF50;
+            color: white;
+            margin-top: 2rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Alpha Shares Services Menu</h1>
+        <nav>
+            <a href="#design">Design Services</a>
+            <a href="#subscriptions">Subscriptions</a>
+            <a href="#consultation">Consultation</a>
+            <a href="#advertising">Advertising</a>
+            <a href="#customizations">Customizations</a>
+        </nav>
     </header>
     <main>
-        <h2>Design and Creative Services</h2>
-        <ul>
-            <li><strong>Logo Design:</strong> Unique logos with multiple concepts and revisions <span class="price">$500</span></li>
-            <li><strong>Website Development:</strong> Full responsive website design with up to 5 custom features <span class="price">$3,000</span></li>
-            <li><strong>Marketing Graphics:</strong> Custom-designed graphics for social media and advertisements <span class="price">$50 per graphic</span></li>
-            <li><strong>NFT Art Design:</strong> Custom NFT artwork creation with ownership and rights transfer <span class="price">$1,000 per NFT</span></li>
-            <li><strong>Branding Package:</strong> Complete branding package including logo, colors, and typography <span class="price">$2,500</span></li>
-        </ul>
+        <section id="design">
+            <h2>Design and Creative Services</h2>
+            <ul>
+                <li><img src="placeholder.jpg" alt="Logo Design"><strong>Logo Design:</strong> Unique logos with multiple concepts and revisions <span class="price">$500</span></li>
+                <li><img src="placeholder.jpg" alt="Website Development"><strong>Website Development:</strong> Full responsive website design with up to 5 custom features <span class="price">$3,000</span></li>
+                <li><img src="placeholder.jpg" alt="Marketing Graphics"><strong>Marketing Graphics:</strong> Custom-designed graphics for social media and advertisements <span class="price">$50 per graphic</span></li>
+                <li><img src="placeholder.jpg" alt="NFT Art Design"><strong>NFT Art Design:</strong> Custom NFT artwork creation with ownership and rights transfer <span class="price">$1,000 per NFT</span></li>
+                <li><img src="placeholder.jpg" alt="Branding Package"><strong>Branding Package:</strong> Complete branding package including logo, colors, and typography <span class="price">$2,500</span></li>
+            </ul>
+        </section>
 
-        <h2>Creative Subscriptions</h2>
-        <h3>Written Content</h3>
-        <ul>
-            <li><strong>Basic:</strong> 2 written pieces per month <span class="price">$300/month</span></li>
-            <li><strong>Pro:</strong> 4 written pieces per month <span class="price">$600/month</span></li>
-            <li><strong>Premium:</strong> Unlimited written content with SEO optimization <span class="price">$1,200/month</span></li>
-        </ul>
+        <section id="subscriptions">
+            <h2>Creative Subscriptions</h2>
+            <h3>Written Content</h3>
+            <ul>
+                <li><img src="placeholder.jpg" alt="Basic Written Content"><strong>Basic:</strong> 2 written pieces per month <span class="price">$300/month</span></li>
+                <li><img src="placeholder.jpg" alt="Pro Written Content"><strong>Pro:</strong> 4 written pieces per month <span class="price">$600/month</span></li>
+                <li><img src="placeholder.jpg" alt="Premium Written Content"><strong>Premium:</strong> Unlimited written content with SEO optimization <span class="price">$1,200/month</span></li>
+            </ul>
+            <h3>Social Media Graphics and Promo Content</h3>
+            <ul>
+                <li><img src="placeholder.jpg" alt="Basic Social Media"><strong>Basic:</strong> 5 social media graphics or promo visuals <span class="price">$300/month</span></li>
+                <li><img src="placeholder.jpg" alt="Pro Social Media"><strong>Pro:</strong> 10 custom graphics or GIFs monthly <span class="price">$600/month</span></li>
+                <li><img src="placeholder.jpg" alt="Premium Social Media"><strong>Premium:</strong> Unlimited graphics and GIFs <span class="price">$1,200/month</span></li>
+            </ul>
+            <h3>Video Media Content</h3>
+            <ul>
+                <li><img src="placeholder.jpg" alt="Basic Video Media"><strong>Basic:</strong> 2 short videos or clips monthly <span class="price">$500/month</span></li>
+                <li><img src="placeholder.jpg" alt="Pro Video Media"><strong>Pro:</strong> 4 videos or clips monthly <span class="price">$1,000/month</span></li>
+                <li><img src="placeholder.jpg" alt="Premium Video Media"><strong>Premium:</strong> Unlimited video content creation <span class="price">$2,000/month</span></li>
+            </ul>
+        </section>
 
-        <h3>Social Media Graphics and Promo Content</h3>
-        <ul>
-            <li><strong>Basic:</strong> 5 social media graphics or promo visuals <span class="price">$300/month</span></li>
-            <li><strong>Pro:</strong> 10 custom graphics or GIFs monthly <span class="price">$600/month</span></li>
-            <li><strong>Premium:</strong> Unlimited graphics and GIFs <span class="price">$1,200/month</span></li>
-        </ul>
+        <section id="consultation">
+            <h2>Business Consultation Subscriptions</h2>
+            <ul>
+                <li><img src="placeholder.jpg" alt="Basic Consultation"><strong>Basic Consultation:</strong> 2 sessions (30 minutes each) monthly <span class="price">$250/month</span></li>
+                <li><img src="placeholder.jpg" alt="Pro Consultation"><strong>Pro Consultation:</strong> 4 sessions (45 minutes each) monthly <span class="price">$500/month</span></li>
+                <li><img src="placeholder.jpg" alt="Premium Consultation"><strong>Premium Consultation:</strong> Unlimited sessions (up to 60 minutes each) monthly <span class="price">$1,000/month</span></li>
+            </ul>
+        </section>
 
-        <h3>Video Media Content</h3>
-        <ul>
-            <li><strong>Basic:</strong> 2 short videos or clips monthly <span class="price">$500/month</span></li>
-            <li><strong>Pro:</strong> 4 videos or clips monthly <span class="price">$1,000/month</span></li>
-            <li><strong>Premium:</strong> Unlimited video content creation <span class="price">$2,000/month</span></li>
-        </ul>
+        <section id="advertising">
+            <h2>Sponsorships, Advertising, and Spotlight Services</h2>
+            <ul>
+                <li><img src="placeholder.jpg" alt="Social Media Sponsorship"><strong>Social Media Sponsorship:</strong> Featured posts on X, Instagram, and Facebook feeds <span class="price">$250/post</span></li>
+                <li><img src="placeholder.jpg" alt="YouTube Video Features"><strong>YouTube Video Features:</strong> Dedicated segment in a video or shout-out <span class="price">$500/video</span></li>
+                <li><img src="placeholder.jpg" alt="Email Marketing"><strong>Email Marketing Advertising:</strong> Featured advertisement in a newsletter <span class="price">$300/email</span></li>
+                <li><img src="placeholder.jpg" alt="Live Stream Sponsorship"><strong>Live Stream Sponsorship:</strong> Mention during live streams with branded overlays <span class="price">$400/stream</span></li>
+                <li><img src="placeholder.jpg" alt="Daily Social Spotlight"><strong>Daily Social Spotlight:</strong> Highlighted spot on daily social media posts <span class="price">$200/day</span></li>
+                <li><img src="placeholder.jpg" alt="Ad Bundle"><strong>Multichannel Ad Bundle:</strong> 3 social posts, 1 YouTube feature, and 1 email ad <span class="price">$2,500/package</span></li>
+            </ul>
+        </section>
 
-        <h2>Business Consultation Subscriptions</h2>
-        <ul>
-            <li><strong>Basic Consultation:</strong> 2 sessions (30 minutes each) monthly <span class="price">$250/month</span></li>
-            <li><strong>Pro Consultation:</strong> 4 sessions (45 minutes each) monthly <span class="price">$500/month</span></li>
-            <li><strong>Premium Consultation:</strong> Unlimited sessions (up to 60 minutes each) monthly <span class="price">$1,000/month</span></li>
-        </ul>
-
-        <h2>Sponsorships, Advertising, and Spotlight Services</h2>
-        <ul>
-            <li><strong>Social Media Sponsorship:</strong> Featured posts on X, Instagram, and Facebook feeds <span class="price">$250/post</span></li>
-            <li><strong>YouTube Video Features:</strong> Dedicated segment in a video or shout-out <span class="price">$500/video</span></li>
-            <li><strong>Email Marketing Advertising:</strong> Featured advertisement in a newsletter <span class="price">$300/email</span></li>
-            <li><strong>Live Stream Sponsorship:</strong> Mention during live streams with branded overlays <span class="price">$400/stream</span></li>
-            <li><strong>Daily Social Spotlight:</strong> Highlighted spot on daily social media posts <span class="price">$200/day</span></li>
-            <li><strong>Multichannel Ad Bundle:</strong> 3 social posts, 1 YouTube feature, and 1 email ad <span class="price">$2,500/package</span></li>
-        </ul>
-
-        <h2>Customizations and Add-Ons</h2>
-        <ul>
-            <li><strong>Custom Deliverables:</strong> Tailored to client needs <span class="price">$100/hour</span></li>
-            <li><strong>Additional Revisions:</strong> Extra revisions as needed <span class="price">$75/revision</span></li>
-            <li><strong>Rush Service:</strong> Expedited project completion <span class="price">+25% of total project cost</span></li>
-            <li><strong>Additional Pages (Website):</strong> Add pages to existing websites <span class="price">$500 per page</span></li>
-            <li><strong>One-Time Consultation:</strong> Expert consultation session (60 minutes) <span class="price">$150/session</span></li>
-            <li><strong>Customized Business Plan:</strong> Tailored goals and strategies <span class="price">$500 flat fee</span></li>
-            <li><strong>Workshops and Training:</strong> Focused sessions on branding, operations, or strategy <span class="price">$1,500/workshop</span></li>
-        </ul>
+        <section id="customizations">
+            <h2>Customizations and Add-Ons</h2>
+            <ul>
+                <li><img src="placeholder.jpg" alt="Custom Deliverables"><strong>Custom Deliverables:</strong> Tailored to client needs <span class="price">$100/hour</span></li>
+                <li><img src="placeholder.jpg" alt="Additional Revisions"><strong>Additional Revisions:</strong> Extra revisions as needed <span class="price">$75/revision</span></li>
+                <li><img src="placeholder.jpg" alt="Rush Service"><strong>Rush Service:</strong> Expedited project completion <span class="price">+25% of total project cost</span></li>
+                <li><img src="placeholder.jpg" alt="Additional Pages"><strong>Additional Pages (Website):</strong> Add pages to existing websites <span class="price">$500 per page</span></li>
+                <li><img src="placeholder.jpg" alt="Consultation"><strong>One-Time Consultation:</strong> Expert consultation session (60 minutes) <span class="price">$150/session</span></li>
+                <li><img src="placeholder.jpg" alt="Business Plan"><strong>Customized Business Plan:</strong> Tailored goals and strategies <span class="price">$500 flat fee</span></li>
+                <li><img src="placeholder.jpg" alt="Workshops"><strong>Workshops and Training:</strong> Focused sessions on branding, operations, or strategy <span class="price">$1,500/workshop</span></li>
+            </ul>
+        </section>
     </main>
     <footer>
         <p>&copy; 2025 Alpha Shares. All rights reserved.</p>
