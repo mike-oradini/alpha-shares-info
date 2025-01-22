@@ -15,3 +15,17 @@ In the future these points could be redeemed for an airdrop or claim of Alpha to
 
 
 marketplace to loan and borrow funds for AS nfts as well as for partner collections.  For example, I put a lending offer up for 800 usdc with 10% interest for 30 days.   Someone that needs liquidity can accept it,  payback the loan in 30 days of 880 usdc.  AS takes a 10% cut of profits (produces income for TAP holders) ,  the lender earns the rest.   If the borrower doesn't pay it back, the lender gets the nft.
+
+
+Alpha Shares Marketplace V2
+
+The moment we've all been waiting for.
+
+- Aggregated Listings from 150+ Marketplaces
+- Just-In-Time Gasless Orders
+- Cross-Chain Minting
+- Automatic Floor Sweeping
+- Collection & Trait Offers
+- Point System
+- Deployed on 10+ Major Chains
+- A lot more.
