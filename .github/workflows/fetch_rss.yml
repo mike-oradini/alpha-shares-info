@@ -1,0 +1,13 @@
+name: Fetch RSS Feeds
+
+on:
+  schedule:
+    - cron: '0 */12 * * *'  # Every 12 hours
+
+jobs:
+  fetch-rss:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch RSS Feeds
+        run: |
+          curl -X POST https://your-vercel-deployment-url/api/fetch_rss
