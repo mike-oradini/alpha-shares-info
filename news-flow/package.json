@@ -1,0 +1,24 @@
+{
+  "name": "news-flow",
+  "version": "1.0.0",
+  "description": "A project to fetch RSS feeds, store them in XML, and serve them as HTML.",
+  "main": "rss-feed-fetch.js",
+  "scripts": {
+    "start": "python3 rss-feed-fetch.py && python3 -m http.server 8000",
+    "fetch": "python3 rss-feed-fetch.py",
+    "generate-html": "python3 generate_html.py"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.1"  // If you decide to use Node.js for fetching RSS feeds
+  },
+  "devDependencies": {},
+  "keywords": [
+    "rss",
+    "xml",
+    "html",
+    "fetch",
+    "news"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
