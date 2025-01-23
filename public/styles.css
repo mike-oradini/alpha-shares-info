@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 0.5rem 0;
+    background-color: #3e8e41;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+h1, h2 {
+    color: #4CAF50;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: white;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+li img {
+    width: 60px;
+    height: 60px;
+    margin-right: 1rem;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.price {
+    font-weight: bold;
+    color: #333;
+    margin-left: auto;
+}
+
+.pitch {
+    flex-basis: 100%;
+    margin-top: 0.5rem;
+    font-style: italic;
+    color: #666;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #4CAF50;
+    color: white;
+    margin-top: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
