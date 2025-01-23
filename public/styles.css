@@ -1,6 +1,6 @@
         body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.8;
+            font-family: 'Survivant', sans-serif;
+            line-height: 0.25;
             margin: 0;
             padding: 0;
             background: linear-gradient(135deg, #141e30, #243b55);
@@ -10,7 +10,7 @@
         header {
             background: linear-gradient(to right, #00ff87, #0088ff);
             color: #fff;
-            padding: 1.5rem;
+            padding: 0.25rem;
             text-align: center;
             position: sticky;
             top: 0;
