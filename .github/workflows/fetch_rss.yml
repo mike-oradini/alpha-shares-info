@@ -10,4 +10,4 @@ jobs:
     steps:
       - name: Fetch RSS Feeds
         run: |
-          curl -X POST https://your-vercel-deployment-url/api/fetch_rss
+          curl -X POST https://alpha-shares-info.vercel.app/api/fetch_rss
