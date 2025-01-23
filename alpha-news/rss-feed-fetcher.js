@@ -1,5 +1,8 @@
 // RSS Feed Fetcher
 // Fetches and stores titles, links, and image URLs from RSS feeds into a JSON object
+const fetch = require('node-fetch'); // Add this line
+const fs = require('fs'); // Add this line
+
 const fetchRSSFeeds = async (rssUrls) => {
     const feedData = [];
 
@@ -13,11 +16,9 @@ const fetchRSSFeeds = async (rssUrls) => {
             const items = xml.querySelectorAll("item");
 
             items.forEach(item => {
-                const title = item.querySelector("title")?.textContent || "No Title";
-                const link = item.querySelector("link")?.textContent || "#";
-                const image = item.querySelector("media\\:content")?.getAttribute("url") || 
-                              item.querySelector("enclosure")?.getAttribute("url") || "default-image.jpg";
-
+                const title = item.querySelector("title") ? item.querySelector("title").textContent : "No Title";                
+                const link = item.querySelector("link") ? item.textContent || "#" : "Links";
+                const image = item.querySelector("media\\:content") ? item.getAttribute("url") : "No URL"; // Fixed this line
                 feedData.push({
                     title: title,
                     link: link,
@@ -29,17 +30,16 @@ const fetchRSSFeeds = async (rssUrls) => {
         }
     }
 
-    // Save feedData to local storage or a JSON file
-    localStorage.setItem("rssFeedData", JSON.stringify(feedData));
+    // Save feedData to a JSON file
+    fs.writeFileSync("rssFeedData.json", JSON.stringify(feedData)); // Updated this line
 
     return feedData;
 };
 
 // Example RSS Feed URLs (Replace these with AlphaShares-specific feeds)
 const rssUrls = [
-    "https://alphashares.io/rss-feed-1.xml",
-    "https://alphashares.io/rss-feed-2.xml"
+    "https://bankless.com/rss/feed"
 ];
 
 // Fetch and store feeds
-fetchRSSFeeds(rssUrls).then(data => console.log("RSS Feed Data Fetched:", data));
+fetchRSSFeeds(rssUrls).then(data => console.log("RSS Feed Data Fetched:", data)).catch(error => console.error(error)); // Added catch for unhandled promise rejection
