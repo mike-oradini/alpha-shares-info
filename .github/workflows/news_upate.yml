@@ -1,0 +1,16 @@
+name: Update RSS Feeds and Generate HTML
+
+on:
+  schedule:
+    - cron: '0 */12 * * *'  # Every 12 hours
+
+jobs:
+  update-rss:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch RSS Feeds
+        run: |
+          curl -X POST https://your-vercel-deployment-url/api/fetch_rss
+      - name: Generate HTML
+        run: |
+          curl -X POST https://your-vercel-deployment-url/api/generate_html
