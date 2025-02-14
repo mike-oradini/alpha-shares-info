@@ -21,6 +21,7 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
+/* Sticky Navbar - Always on Top */
 .navbar {
     position: fixed;
     top: 0;
@@ -29,10 +30,10 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background: rgba(0, 0, 0, 0.85);
+    background: rgba(0, 0, 0, 0.9);
     backdrop-filter: blur(10px);
     z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .logo {
@@ -58,7 +59,7 @@ header {
     text-decoration: none;
     font-weight: bold;
     font-size: 1.2rem;
-    transition: all 0.3s;
+    transition: all 0.3s ease;
 }
 
 .nav-links a:hover {
@@ -66,9 +67,9 @@ header {
     transform: scale(1.1);
 }
 
-/* Fix section offset due to sticky navbar */
+/* Fix for Section Overlap - Adjust for Navbar Height */
 section {
-    scroll-margin-top: 80px;
+    scroll-margin-top: 110px; /* Matches the height of the navbar */
 }
 
 /* ====== SCROLLING TICKER ====== */
@@ -82,18 +83,13 @@ section {
     text-align: center;
 }
 
-@keyframes ticker {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(-100%); }
-}
-
 /* ====== HERO SECTION ====== */
 .hero {
     text-align: center;
     padding: 3rem 1rem;
     background: rgba(0, 0, 0, 0.4);
     border-radius: 12px;
-    margin: 6rem auto 2rem;
+    margin: 8rem auto 2rem; /* More margin to compensate for fixed navbar */
     max-width: 1100px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
