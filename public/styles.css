@@ -44,7 +44,7 @@ header {
 
 /* Sticky Navbar - Always on Top */
 .navbar {
-    position: fixed;
+    position: center;
     top: 0;
     width: 20px;
     display: flex;
