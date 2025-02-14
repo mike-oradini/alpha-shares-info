@@ -206,13 +206,16 @@ li .btn {
 }
 
 /* ====== FOOTER ====== */
-footer {
-    text-align: center;
-    padding: 2rem;
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     background: linear-gradient(to right, #0088ff, #00ff87);
     color: #fff;
-    margin-top: 2rem;
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 1rem 0;
+    z-index: 999;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
 }
 
 footer p {
