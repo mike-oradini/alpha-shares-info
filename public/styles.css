@@ -51,7 +51,7 @@ header {
 .navbar {
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
