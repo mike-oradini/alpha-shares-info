@@ -18,7 +18,7 @@ html, body {
 .page-wrapper {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensures the page wrapper is at least the height of the viewport */
+    min-height: 1000vh; /* Ensures the page wrapper is at least the height of the viewport */
 }
 
 .footer {
