@@ -9,6 +9,32 @@ body {
     scroll-behavior: smooth;
 }
 
+html, body {
+    height: 100%; /* Ensures the full height is respected */
+    margin: 0;
+    padding: 0;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the page wrapper is at least the height of the viewport */
+}
+
+main {
+    flex: 1; /* This will push the footer down if content is short */
+    padding: 2rem;
+}
+
+.footer {
+    background: linear-gradient(to right, #0088ff, #00ff87);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
+}
+
+
 /* ====== HEADER & NAVIGATION BAR ====== */
 header {
     background: linear-gradient(to right, #00ff87, #0088ff);
