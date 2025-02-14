@@ -21,11 +21,6 @@ html, body {
     min-height: 100vh; /* Ensures the page wrapper is at least the height of the viewport */
 }
 
-main {
-    flex: 1; /* This will push the footer down if content is short */
-    padding: 2rem;
-}
-
 .footer {
     background: linear-gradient(to right, #0088ff, #00ff87);
     color: #fff;
