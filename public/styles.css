@@ -1,0 +1,84 @@
+/* ====== SERVICE SECTIONS HOVER OVERLAY ====== */
+.service-section {
+    position: relative;
+    overflow: hidden;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    max-width: 1000px;
+    transition: all 0.3s ease-in-out;
+}
+
+.service-section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+}
+
+/* Overlay Container */
+.service-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(20, 30, 48, 0.95);
+    color: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Show overlay on hover */
+.service-section:hover .service-overlay {
+    opacity: 1;
+}
+
+/* Overlay Heading */
+.service-overlay h3 {
+    font-size: 1.8rem;
+    color: #00ff87;
+    margin-bottom: 1rem;
+}
+
+/* Overlay List */
+.service-overlay ul {
+    list-style: none;
+    padding: 0;
+    max-height: 80%;
+    overflow-y: auto;
+    text-align: left;
+}
+
+.service-overlay li {
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.service-overlay li:hover {
+    color: #ff0088;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .service-overlay {
+        padding: 1rem;
+    }
+
+    .service-overlay h3 {
+        font-size: 1.5rem;
+    }
+
+    .service-overlay li {
+        font-size: 0.9rem;
+    }
+}
